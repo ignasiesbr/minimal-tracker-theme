@@ -1,0 +1,13 @@
+.add-issue-container {
+    max-width: 60rem;
+    min-width: 45rem;
+    position: absolute;
+    z-index: 100;
+    background-color: var(--color-grey-light-3);
+    top:0;
+    left:0;
+    transform: translate(100%, 10%);
+    padding: 2rem;
+}
+
+

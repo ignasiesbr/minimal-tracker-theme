@@ -1,0 +1,70 @@
+.confirmation-dialog {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 6rem;
+    background-color: var(--color-grey-light-3);
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+    &__text {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+}
+
+
+.delete-issue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .btn2 {
+        width: 15rem;
+        margin-top: 5rem;
+        padding: 1.5rem 0;
+    }
+}
+
+.btn-dialog {
+    text-decoration: none;
+    border: none;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 100px;
+    transition: all .3s;
+    color: #fff;
+    &--no {
+        background-color: rgb(223, 62, 62);
+    }
+
+    &--yes {
+        background-color: rgb(78, 196, 31);
+    }
+
+    &:hover {
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+        transform: translateY(-.5rem);
+    }
+}

@@ -1,0 +1,53 @@
+.notifications {
+
+}
+
+.notification {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 100px;
+    transition: all .3s;
+    
+    &:hover {
+        background-color: var(--color-grey-light-3);
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+        transform: translateY(-.5rem);
+    }
+    &--info {
+        cursor: pointer;
+    }
+
+    &--unreaded {
+        background-color: var(--color-grey-light-4);
+        p {
+            font-weight: 700;
+        }
+    }
+
+    &--readed {
+        background-color: #fff;
+        p {
+            font-weight: 300;
+        }
+    }
+
+    &__close {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: var(--color-grey-dark-1);
+        margin-left: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+        font-weight: 700 ;  
+    }
+
+    &__button {
+        border: none;
+        margin-left: 1rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}

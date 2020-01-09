@@ -1,0 +1,64 @@
+.issue-discussion {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 5rem 10rem;
+
+    &__img {
+        position: absolute;
+        height: 50rem;
+        right:10rem;
+        top: 5rem;
+    }
+
+    &__form {
+        max-width: 50rem;
+
+        @include respond(tab-port) {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+.issue-container {
+    display: flex;
+    justify-content: space-around;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+}
+
+.issue-info {
+    padding: 5rem 10rem;
+    font-size: 1.6rem;
+
+    @include respond(tab-port) {
+        font-size: 2rem;
+    }
+    &__text {
+        margin-bottom: 1rem;
+        font-weight: 300;
+    }
+
+    &__member {
+        display: block;
+    }
+
+    &__button {
+        width: 10rem;
+    }
+}
+
+.issue-img {
+    width: 40rem;
+
+    @include respond(tab-land) {
+        display: none;
+    }
+}
+

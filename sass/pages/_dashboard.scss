@@ -1,0 +1,25 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-grey-light-1);
+
+
+}
+
+.select-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+}
+
+.dashboard-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

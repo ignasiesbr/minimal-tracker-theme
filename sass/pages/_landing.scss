@@ -1,0 +1,38 @@
+.landing-page {
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--color-grey-light-1);
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.register-ad {
+    padding: 3rem;
+    background-color: var(--color-grey-light-2);
+    border-radius: 4px;
+    font-size: 1.6rem;
+    box-shadow: 0 2rem 4rem rgba(0,0,0,.4);
+    text-align: center;
+    strong {
+        display: inline-block;
+        padding: 1rem 0;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        text-align: left;
+    }
+
+    @include respond(tab-port) {
+        margin-top: 5rem;
+        width: 60%;
+    }
+    @include respond(phone) {
+        width: 90%;
+    }
+
+}

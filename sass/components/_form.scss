@@ -1,0 +1,39 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 1rem 2.5rem;
+    &__input {
+        font-size: 2rem;
+        border: none;
+        border-bottom: 2px solid var(--color-grey-dark-2);
+        background-color:var(--color-grey-light-1);
+        border-radius: 100px;
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+        color: var(--color-grey-dark-2);
+        width: 80%;
+
+        &:focus {
+            outline: none;
+            border-bottom: 3px solid rgb(111, 204, 88);
+
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid var(--color-primary);
+        }
+    }
+
+    &__label {
+        color: var(--color-grey-dark-4);
+        font-size: 1.6rem;
+    }
+
+    &__submit {
+        width: 20%;
+    }
+
+
+}
