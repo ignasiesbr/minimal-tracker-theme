@@ -1,4 +1,4 @@
-#Theme for the Minimal Tracker App
+# Theme for the Minimal Tracker App
 
 Install the dependencies for the usage of the repo using:
   * npm install
@@ -9,3 +9,5 @@ Install the dependencies for the usage of the repo using:
    * npm run build:css
     Complies the sass file and put in the css folder. Prefixes all the properties using autoprefixer and compress the file.
 
+To check the full project live check the following link:
+http://minimal-tracker.surge.sh/
