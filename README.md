@@ -11,3 +11,10 @@ Install the dependencies for the usage of the repo using:
 
 To check the full project live check the following link:
 http://minimal-tracker.surge.sh/
+
+ To log-in to the website and check the funcionality you can use the following credentials:
+ 
+ username: minimal.tracker@gmail.com
+ 
+ password: 123467
+
